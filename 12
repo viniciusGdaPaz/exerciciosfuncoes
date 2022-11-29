@@ -1,0 +1,65 @@
+programa {
+
+  inclua biblioteca Texto-->t
+
+
+
+ 
+
+  
+
+
+
+  funcao inicio() {
+
+    cadeia numero
+
+    cadeia res=""
+
+    inteiro ndig=0
+
+     
+
+     escreva("escreva o numero:")
+
+     leia(numero)
+
+     digitos(res,numero,ndig)
+
+     escreva(res)
+
+     
+
+  }
+
+
+
+ funcao cadeia digitos(cadeia &resp,cadeia numero,inteiro ndig ){
+
+  
+
+     ndig= t.numero_caracteres(numero)
+
+     para(inteiro i=ndig; i > 0; i--){
+
+			caracter posicao = t.obter_caracter(numero, i-1)
+
+      resp+=posicao
+
+      
+
+     
+
+      
+
+
+
+      }
+
+      retorne resp
+
+
+
+  }
+
+}
