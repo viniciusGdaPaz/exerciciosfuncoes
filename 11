@@ -1,0 +1,33 @@
+programa {
+
+  inclua biblioteca Texto --> t
+
+  funcao inicio() {
+
+    cadeia numero
+
+    inteiro ndig=0
+
+     
+
+     escreva("escreva o numero:")
+
+     leia(numero)
+
+     digitos(numero,ndig)
+
+     escreva("\no numero de digitos é:",ndig)
+
+  }
+
+
+
+  funcao inteiro digitos(cadeia numero,inteiro &ndig){
+
+     ndig=t.numero_caracteres(numero)
+
+     retorne ndig
+
+  }
+
+}
