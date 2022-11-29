@@ -1,0 +1,39 @@
+programa {
+
+  
+
+  funcao inicio() {
+
+    inteiro numeros[4]={2,4,6,8}
+
+    inteiro total=0
+
+     
+
+    soma(total,numeros)
+
+    escreva(total)
+
+
+
+    
+
+  }
+
+
+
+  funcao inteiro soma(inteiro &total ,inteiro numeros[]){
+
+    
+
+    para(inteiro i=0;i<4;i++){
+
+      total=total+numeros[i]
+
+    }
+
+    retorne total
+
+    }
+
+}
