@@ -1,0 +1,57 @@
+programa {
+
+  funcao inicio() {
+
+    inteiro n 
+
+
+
+   faca{
+
+    escreva ("informe um número inteiro positivo:")
+
+    leia(n)
+
+    se(n % 2==1 ){
+
+      escreva("numero informado é impar , tente novamente\n")
+
+      
+
+    }
+
+    }enquanto(n % 2 != 0)
+
+    desenho(n)
+
+  }
+
+
+
+  funcao desenho(inteiro n){
+
+     
+
+     para(inteiro i=0;i<n;i++){
+
+
+
+          para(inteiro j=0;j<n;j++){
+
+            escreva("#")
+
+          }
+
+          escreva("\n")
+
+          
+
+
+
+     }
+
+
+
+  }
+
+}
