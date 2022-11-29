@@ -1,0 +1,1274 @@
+
+6----------------------------------------
+
+programa
+
+{
+
+
+
+inclua biblioteca Util -->u
+
+	funcao inicio()
+
+	{
+
+		calculadora()
+
+	}
+
+
+
+       funcao calculadora(){
+
+       	inteiro esc
+
+       	real resp=0.0
+
+          real x=0.0
+
+          real y=0.0
+
+       	cadeia ctz
+
+       	escreva("==========calculadora=========\n")
+
+       	escreva("soma[1]\n")
+
+       	escreva("subtração[2]\n")
+
+       	escreva("divisão[3]\n")
+
+       	escreva("multiplicação[4]\n")
+
+       	escreva("sair[5]\n")
+
+       	escreva("===============================\n")
+
+       	escreva("qual deseja realizar?\n")
+
+
+
+       	leia(esc)
+
+
+
+       	escolha(esc){
+
+
+
+			caso 1: 
+
+            limpa()
+
+
+
+      	   escreva("informe o primeiro valor")
+
+	        leia(x)
+
+	        escreva("informe o  valor que sera somado ao primeiro")
+
+	        leia(y)
+
+			soma(x,y, resp)
+
+      escreva("\n",resp,"\n")
+
+      u.aguarde(6000)
+
+			calculadora()
+
+
+
+			pare
+
+
+
+
+
+			caso 2:
+
+           limpa()
+
+
+
+      	   escreva("informe o primeiro valor")
+
+	        leia(x)
+
+	        escreva("informe o  valor que sera subtraido do primeiro")
+
+	        leia(y)
+
+	        subtracao(x,y,resp)
+
+          escreva("\n",resp,"\n")
+
+          u.aguarde(6000)
+
+	        calculadora()
+
+
+
+
+
+			pare
+
+
+
+
+
+			caso 3: 
+
+            limpa()
+
+      	    escreva("informe o primeiro valor")
+
+	         leia(x)
+
+	         escreva("informe o  valor que ira dividir o primeiro")
+
+	         leia(y)
+
+			divisao(x,y,resp)
+
+      escreva("\n",resp,"\n")
+
+      u.aguarde(6000)
+
+			calculadora()
+
+
+
+
+
+			pare
+
+
+
+			caso 4:
+
+             limpa()
+
+      	     escreva("informe o primeiro valor")
+
+	          leia(x)
+
+	          escreva("informe o  valor que ira multiplicar o primeiro")
+
+	          leia(y)
+
+			multiplicacao(x,y,resp)
+
+			escreva("\n",resp,"\n")
+
+      u.aguarde(6000)
+
+			calculadora()
+
+			pare 
+
+
+
+
+
+
+
+	          caso 5: escreva("deseja mesmo sair?")
+
+	          leia(ctz)
+
+	          se(ctz=="sim"){
+
+	          	pare
+
+	          }senao{
+
+	          	calculadora()
+
+	          	}
+
+			pare 
+
+			caso contrario: escreva("opção não encontrada\n")
+
+      u.aguarde(2000)
+
+      limpa()
+
+			calculadora()
+
+			pare
+
+		}
+
+       }
+
+
+
+      funcao real soma(real x ,real y,real &resp){
+
+
+
+
+
+
+
+      	resp=x+y
+
+      	retorne resp
+
+
+
+      }
+
+
+
+      funcao real subtracao(real x ,real y,real &resp){
+
+
+
+      	
+
+
+
+      	resp=x-y
+
+      	retorne resp
+
+      }
+
+
+
+      funcao real divisao(real x ,real y,real &resp){
+
+
+
+
+
+      	
+
+
+
+      	resp=x/y
+
+      	retorne resp
+
+
+
+      }
+
+       funcao real multiplicacao(real x ,real y,real &resp){
+
+
+
+
+
+      	
+
+
+
+      	resp=x*y
+
+      	retorne resp
+
+      }
+
+
+
+
+
+
+
+
+
+}
+
+7----------------------------------------
+
+programa
+
+{
+
+
+
+inclua biblioteca Util -->u
+
+	funcao inicio()
+
+	{
+
+		calculadora()
+
+	}
+
+
+
+       funcao calculadora(){
+
+       	inteiro esc
+
+       	real resp=0.0
+
+          real x=0.0
+
+          real y=0.0
+
+       	cadeia ctz
+
+        inteiro m=0
+
+       	escreva("==========calculadora=========\n")
+
+       	escreva("soma[1]\n")
+
+       	escreva("subtração[2]\n")
+
+       	escreva("divisão[3]\n")
+
+       	escreva("multiplicação[4]\n")
+
+        escreva("média[5]\n")
+
+       	escreva("sair[6]\n")
+
+       	escreva("===============================\n")
+
+       	escreva("qual deseja realizar?\n")
+
+
+
+       	leia(esc)
+
+
+
+       	escolha(esc){
+
+
+
+			caso 1: 
+
+            limpa()
+
+
+
+      	   escreva("informe o primeiro valor:")
+
+	        leia(x)
+
+	        escreva("informe o  valor que sera somado ao primeiro:")
+
+	        leia(y)
+
+			soma(x,y, resp)
+
+      escreva("\n",resp,"\n")
+
+      u.aguarde(6000)
+
+			calculadora()
+
+
+
+			pare
+
+
+
+
+
+			caso 2:
+
+           limpa()
+
+
+
+      	   escreva("informe o primeiro valor:")
+
+	        leia(x)
+
+	        escreva("informe o  valor que sera subtraido do primeiro:")
+
+	        leia(y)
+
+	        subtracao(x,y,resp)
+
+          escreva("\n",resp,"\n")
+
+          u.aguarde(6000)
+
+	        calculadora()
+
+
+
+
+
+			pare
+
+
+
+
+
+			caso 3: 
+
+            limpa()
+
+      	    escreva("informe o primeiro valor:")
+
+	         leia(x)
+
+	         escreva("informe o  valor que ira dividir o primeiro:")
+
+	         leia(y)
+
+			divisao(x,y,resp)
+
+      escreva("\n",resp,"\n")
+
+      u.aguarde(6000)
+
+			calculadora()
+
+
+
+
+
+			pare
+
+
+
+     
+
+
+
+			caso 4:
+
+             limpa()
+
+      	     escreva("informe o primeiro valor:")
+
+	          leia(x)
+
+	          escreva("informe o  valor que ira multiplicar o primeiro:")
+
+	          leia(y)
+
+			multiplicacao(x,y,resp)
+
+			escreva("\n",resp,"\n")
+
+      u.aguarde(6000)
+
+			calculadora()
+
+			pare 
+
+
+
+      caso 5:media(x,y,resp,m)
+
+
+
+
+
+      pare
+
+
+
+
+
+	          caso 6: escreva("deseja mesmo sair?")
+
+	          leia(ctz)
+
+	          se(ctz=="sim"){
+
+	          	pare
+
+	          }senao{
+
+	          	calculadora()
+
+	          	}
+
+			pare 
+
+			caso contrario: escreva("opção não encontrada\n")
+
+      u.aguarde(2000)
+
+      limpa()
+
+			calculadora()
+
+			pare
+
+		}
+
+       }
+
+
+
+      funcao real soma(real x ,real y,real &resp){
+
+
+
+
+
+
+
+      	resp=x+y
+
+      	retorne resp
+
+
+
+      }
+
+
+
+      funcao real subtracao(real x ,real y,real &resp){
+
+
+
+      	
+
+
+
+      	resp=x-y
+
+      	retorne resp
+
+      }
+
+
+
+      funcao real divisao(real x ,real y,real &resp){
+
+
+
+
+
+      	
+
+
+
+      	resp=x/y
+
+      	retorne resp
+
+
+
+      }
+
+       funcao real multiplicacao(real x ,real y,real &resp){
+
+
+
+
+
+      	
+
+
+
+      	resp=x*y
+
+      	retorne resp
+
+      }
+
+
+
+      funcao real media (real x ,real y,real &resp,inteiro m){
+
+         m=2
+
+         cadeia conf
+
+         escreva("informe o valor:")
+
+         leia(x)
+
+        faca{
+
+          escreva("\ninforme o valor:")
+
+          leia(y)
+
+          soma(x,y,resp)
+
+          x=resp
+
+          escreva(x)
+
+          escreva("\ncalcular a média?")
+
+          leia(conf)
+
+          se(conf=="sim"){
+
+            escreva(x/m)
+
+          }
+
+          senao{
+
+            m=m+1
+
+          }
+
+          
+
+        }enquanto(conf!="sim")
+
+        u.aguarde(2000)
+
+        limpa()
+
+        calculadora()
+
+
+
+		retorne m
+
+      }
+
+
+
+
+
+
+
+
+
+}
+
+8---------------
+
+programa {
+
+  inclua biblioteca Matematica-->mat
+
+  funcao inicio() {
+
+    real a=0.0
+
+    real b=0.0
+
+    real soma=0.0
+
+    real rq=0.0
+
+
+
+    escreva("informe os dois lados menores do triangulo retangulo para calcular a hipotenuse")
+
+    escreva("\n informe o primeiro valor:")
+
+    leia(a)
+
+    escreva(" informe o segundo valor:")
+
+    leia(b)
+
+    hipotenuse(a,b,rq,soma)
+
+    escreva("\nsua hipotenuse sera:",rq)
+
+    
+
+  }
+
+
+
+  funcao real  hipotenuse(real a , real b, real &rq,real soma)
+
+  {
+
+	  a= a*a
+
+	  b= b*b
+
+	  soma=a+b
+
+	
+
+	  rq=mat.raiz(soma,2)
+
+	  retorne rq
+
+  }
+
+
+
+
+
+}
+
+9---------------------
+
+programa {
+
+  funcao inicio() {
+
+    logico resp = falso
+
+    real a,b,c,base = 0
+
+    
+
+    escreva("informe o valor das tres retas\n")
+
+    escreva("informe o primeiro:")
+
+    leia(a)
+
+    escreva("informe o segundo:")
+
+    leia(b)
+
+    escreva("informe o terceiro:")
+
+    leia(c)
+
+    triangulo(a,b,c,base,resp)
+
+    escreva("o triangulo é: ",resp)
+
+  	
+
+  }
+
+  funcao logico triangulo(real a, real b,real c,real base ,logico &resp){
+
+
+
+      se(a>b e a>c){
+
+        base=a
+
+        a=0
+
+      }
+
+       se(b>a e b>c){
+
+        base=b
+
+        b=0
+
+      }
+
+       se(c>b e c>b){
+
+        base=c
+
+        c=0
+
+      }
+
+
+
+      se(a+b+c > base){
+
+        resp=verdadeiro
+
+      }
+
+      se(a+b+c < base){
+
+        resp=falso
+
+
+
+      }
+
+      retorne resp
+
+
+
+
+
+    }
+
+}
+
+10-----------------------
+
+programa {
+
+  funcao inicio() {
+
+    inteiro n 
+
+
+
+   faca{
+
+    escreva ("informe um número inteiro positivo:")
+
+    leia(n)
+
+    se(n % 2==1 ){
+
+      escreva("numero informado é impar , tente novamente\n")
+
+      
+
+    }
+
+    }enquanto(n % 2 != 0)
+
+    desenho(n)
+
+  }
+
+
+
+  funcao desenho(inteiro n){
+
+     
+
+     para(inteiro i=0;i<n;i++){
+
+
+
+          para(inteiro j=0;j<n;j++){
+
+            escreva("#")
+
+          }
+
+          escreva("\n")
+
+          
+
+
+
+     }
+
+
+
+  }
+
+}
+
+11----------------------------------
+
+programa {
+
+  inclua biblioteca Texto --> t
+
+  funcao inicio() {
+
+    cadeia numero
+
+    inteiro ndig=0
+
+     
+
+     escreva("escreva o numero:")
+
+     leia(numero)
+
+     digitos(numero,ndig)
+
+     escreva("\no numero de digitos é:",ndig)
+
+  }
+
+
+
+  funcao inteiro digitos(cadeia numero,inteiro &ndig){
+
+     ndig=t.numero_caracteres(numero)
+
+     retorne ndig
+
+  }
+
+}
+
+12-----------------------------
+
+programa {
+
+  inclua biblioteca Texto-->t
+
+
+
+ 
+
+  
+
+
+
+  funcao inicio() {
+
+    cadeia numero
+
+    cadeia res=""
+
+    inteiro ndig=0
+
+     
+
+     escreva("escreva o numero:")
+
+     leia(numero)
+
+     digitos(res,numero,ndig)
+
+     escreva(res)
+
+     
+
+  }
+
+
+
+ funcao cadeia digitos(cadeia &resp,cadeia numero,inteiro ndig ){
+
+  
+
+     ndig= t.numero_caracteres(numero)
+
+     para(inteiro i=ndig; i > 0; i--){
+
+			caracter posicao = t.obter_caracter(numero, i-1)
+
+      resp+=posicao
+
+      
+
+     
+
+      
+
+
+
+      }
+
+      retorne resp
+
+
+
+  }
+
+}
+
+13------------------------------
+
+programa {
+
+  inclua biblioteca Util-->u
+
+  funcao inicio() {
+
+    inteiro nv=0
+
+    inteiro pcara=0 
+
+    inteiro pcoroa=0
+
+    cadeia sorte=""
+
+    inteiro nvj=0
+
+    inteiro st=0
+
+    escreva("quantas vezes você deseja jogar cara ou coroa?")
+
+    leia(nv)
+
+    nvj=nv
+
+    para(inteiro i=0;i<nv;i++){
+
+        dados(sorte,pcara,pcoroa,st)
+
+        escreva(dados(sorte,pcara,pcoroa,st),"\n")
+
+        
+
+    }
+
+    
+
+    real results1 =pcara*50/nvj
+
+    escreva("\n porcentagem de vezes que saiu cara:",results1)
+
+    real results2 =pcoroa*50/nvj
+
+    escreva("\n porcentagem de vezes que saiu coroa:",results2)
+
+    
+
+    
+
+   
+
+   
+
+  }
+
+
+
+
+
+  funcao cadeia dados(cadeia sorte ,inteiro &pcara , inteiro &pcoroa,inteiro st){
+
+ 
+
+    st = u.sorteia(0,1)
+
+    
+
+    se(st % 2== 0){
+
+      sorte = "coroa"
+
+      pcoroa=pcoroa+1
+
+    }
+
+    se(st % 2==1){
+
+      sorte = "cara"
+
+      pcara=pcara+1
+
+    }
+
+
+
+   
+
+
+
+    retorne sorte
+
+    }
+
+
+
+    
+
+   
+
+
+
+}
+
+14-----------------------------
+
+programa {
+
+  inclua biblioteca Util --> u
+
+  funcao inicio() {
+
+    sorteio()
+
+  }
+
+
+
+
+
+funcao sorteio(){
+
+  escreva(u.sorteia(1,6))
+
+}
+
+
+
+
+
+}
+
+15-----------------------------------
+
+programa {
+
+  
+
+  funcao inicio() {
+
+    inteiro numeros[4]={2,4,6,8}
+
+    inteiro total=0
+
+     
+
+    soma(total,numeros)
+
+    escreva(total)
+
+
+
+    
+
+  }
+
+
+
+  funcao inteiro soma(inteiro &total ,inteiro numeros[]){
+
+    
+
+    para(inteiro i=0;i<4;i++){
+
+      total=total+numeros[i]
+
+    }
+
+    retorne total
+
+    }
+
+}
+
+16----------------------------
+
+programa {
+
+  
+
+  funcao inicio() {
+
+      
+
+    inteiro numeros[4]={2,4,6,8}
+
+    inteiro total=0
+
+     
+
+    soma(total,numeros)
+
+    escreva(total)
+
+
+
+    
+
+  }
+
+
+
+  funcao inteiro soma(inteiro &total ,inteiro numeros[]){
+
+    
+
+    para(inteiro i=0;i<4;i++){
+
+      total=total+numeros[i]
+
+    }
+
+    total = total/4
+
+    retorne total
+
+    }
+
+}
+
+17------------------------------
+
+programa {
+
+	funcao inicio() {
+
+	    inteiro numeros[10]={12,20,30,40,123,146,345,654,12345,7654}
+
+	    inteiro mn=0
+
+		maior(numeros,mn)
+
+		escreva(maior(numeros,mn))
+
+	}
+
+	
+
+	funcao inteiro maior(inteiro numeros[],inteiro mn){
+
+	    para(inteiro i=0;i<9;i++){
+
+	        
+
+	        se(numeros[i]>numeros[i+1]){
+
+	            mn=numeros[i]
+
+	        }
+
+	   }
+
+	   retorne mn
+
+	}
+
+}
+
+18----------------------------------------
+
+programa {
+
+	funcao inicio() {
+
+	    inteiro numeros[10]={5,2,8,3,1,7,0,9,4,6}
+
+	    inteiro mn=0
+
+		maior(numeros,mn)
+
+		para(inteiro i=0;i<10;i++){
+
+		    escreva(numeros[i])
+
+		}
+
+	}
+
+	
+
+	funcao  maior(inteiro &numeros[],inteiro mn){
+
+	    
+
+	     para(inteiro j=0;j<9;j++){
+
+	      para(inteiro i=0;i<9;i++){
+
+	        se(numeros[i]>numeros[i+1]){
+
+	            mn=numeros[i]
+
+	            numeros[i]=numeros[i+1]
+
+	            numeros[i+1]=mn
+
+	            }
+
+	         }
+
+	    }
+
+	            
+
+	            
+
+	            
+
+	      }
+
+	   
+
+	
+
+}
