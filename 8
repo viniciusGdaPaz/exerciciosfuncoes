@@ -1,0 +1,59 @@
+programa {
+
+  inclua biblioteca Matematica-->mat
+
+  funcao inicio() {
+
+    real a=0.0
+
+    real b=0.0
+
+    real soma=0.0
+
+    real rq=0.0
+
+
+
+    escreva("informe os dois lados menores do triangulo retangulo para calcular a hipotenuse")
+
+    escreva("\n informe o primeiro valor:")
+
+    leia(a)
+
+    escreva(" informe o segundo valor:")
+
+    leia(b)
+
+    hipotenuse(a,b,rq,soma)
+
+    escreva("\nsua hipotenuse sera:",rq)
+
+    
+
+  }
+
+
+
+  funcao real  hipotenuse(real a , real b, real &rq,real soma)
+
+  {
+
+	  a= a*a
+
+	  b= b*b
+
+	  soma=a+b
+
+	
+
+	  rq=mat.raiz(soma,2)
+
+	  retorne rq
+
+  }
+
+
+
+
+
+}
