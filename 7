@@ -1,0 +1,355 @@
+programa
+
+{
+
+
+
+inclua biblioteca Util -->u
+
+	funcao inicio()
+
+	{
+
+		calculadora()
+
+	}
+
+
+
+       funcao calculadora(){
+
+       	inteiro esc
+
+       	real resp=0.0
+
+          real x=0.0
+
+          real y=0.0
+
+       	cadeia ctz
+
+        inteiro m=0
+
+       	escreva("==========calculadora=========\n")
+
+       	escreva("soma[1]\n")
+
+       	escreva("subtração[2]\n")
+
+       	escreva("divisão[3]\n")
+
+       	escreva("multiplicação[4]\n")
+
+        escreva("média[5]\n")
+
+       	escreva("sair[6]\n")
+
+       	escreva("===============================\n")
+
+       	escreva("qual deseja realizar?\n")
+
+
+
+       	leia(esc)
+
+
+
+       	escolha(esc){
+
+
+
+			caso 1: 
+
+            limpa()
+
+
+
+      	   escreva("informe o primeiro valor:")
+
+	        leia(x)
+
+	        escreva("informe o  valor que sera somado ao primeiro:")
+
+	        leia(y)
+
+			soma(x,y, resp)
+
+      escreva("\n",resp,"\n")
+
+      u.aguarde(6000)
+
+			calculadora()
+
+
+
+			pare
+
+
+
+
+
+			caso 2:
+
+           limpa()
+
+
+
+      	   escreva("informe o primeiro valor:")
+
+	        leia(x)
+
+	        escreva("informe o  valor que sera subtraido do primeiro:")
+
+	        leia(y)
+
+	        subtracao(x,y,resp)
+
+          escreva("\n",resp,"\n")
+
+          u.aguarde(6000)
+
+	        calculadora()
+
+
+
+
+
+			pare
+
+
+
+
+
+			caso 3: 
+
+            limpa()
+
+      	    escreva("informe o primeiro valor:")
+
+	         leia(x)
+
+	         escreva("informe o  valor que ira dividir o primeiro:")
+
+	         leia(y)
+
+			divisao(x,y,resp)
+
+      escreva("\n",resp,"\n")
+
+      u.aguarde(6000)
+
+			calculadora()
+
+
+
+
+
+			pare
+
+
+
+     
+
+
+
+			caso 4:
+
+             limpa()
+
+      	     escreva("informe o primeiro valor:")
+
+	          leia(x)
+
+	          escreva("informe o  valor que ira multiplicar o primeiro:")
+
+	          leia(y)
+
+			multiplicacao(x,y,resp)
+
+			escreva("\n",resp,"\n")
+
+      u.aguarde(6000)
+
+			calculadora()
+
+			pare 
+
+
+
+      caso 5:media(x,y,resp,m)
+
+
+
+
+
+      pare
+
+
+
+
+
+	          caso 6: escreva("deseja mesmo sair?")
+
+	          leia(ctz)
+
+	          se(ctz=="sim"){
+
+	          	pare
+
+	          }senao{
+
+	          	calculadora()
+
+	          	}
+
+			pare 
+
+			caso contrario: escreva("opção não encontrada\n")
+
+      u.aguarde(2000)
+
+      limpa()
+
+			calculadora()
+
+			pare
+
+		}
+
+       }
+
+
+
+      funcao real soma(real x ,real y,real &resp){
+
+
+
+
+
+
+
+      	resp=x+y
+
+      	retorne resp
+
+
+
+      }
+
+
+
+      funcao real subtracao(real x ,real y,real &resp){
+
+
+
+      	
+
+
+
+      	resp=x-y
+
+      	retorne resp
+
+      }
+
+
+
+      funcao real divisao(real x ,real y,real &resp){
+
+
+
+
+
+      	
+
+
+
+      	resp=x/y
+
+      	retorne resp
+
+
+
+      }
+
+       funcao real multiplicacao(real x ,real y,real &resp){
+
+
+
+
+
+      	
+
+
+
+      	resp=x*y
+
+      	retorne resp
+
+      }
+
+
+
+      funcao real media (real x ,real y,real &resp,inteiro m){
+
+         m=2
+
+         cadeia conf
+
+         escreva("informe o valor:")
+
+         leia(x)
+
+        faca{
+
+          escreva("\ninforme o valor:")
+
+          leia(y)
+
+          soma(x,y,resp)
+
+          x=resp
+
+          escreva(x)
+
+          escreva("\ncalcular a média?")
+
+          leia(conf)
+
+          se(conf=="sim"){
+
+            escreva(x/m)
+
+          }
+
+          senao{
+
+            m=m+1
+
+          }
+
+          
+
+        }enquanto(conf!="sim")
+
+        u.aguarde(2000)
+
+        limpa()
+
+        calculadora()
+
+
+
+		retorne m
+
+      }
+
+
+
+
+
+
+
+
+
+}
